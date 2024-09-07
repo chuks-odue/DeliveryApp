@@ -27,6 +27,17 @@ body {
   grid-template-rows: auto 1fr;
   gap: px;
   min-height: 100vh;
+  margin-top: 140px;
+}
+header{
+  position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: orange;
+    z-index: 999;
+    
+    padding: 20px;
+
 }
 
 
@@ -60,12 +71,13 @@ button {
 }
 
 nav {
-  background:orange;
+  
   color: var(--color8);
   
-  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.2);
-  position:sticky;
-  top: 0;
+  
+  
+  
+  
   
 }
 
@@ -105,6 +117,8 @@ nav > .container {
   background: rgb(7, 104, 109)/*var(--color8)*/;
   /*transform: translateX(100%);
   transition: var(--transition);*/
+  
+  z-index: 9999;
 }
 .frontImg {
   
