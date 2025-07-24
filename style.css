@@ -33,11 +33,23 @@ header{
   position: fixed;
     top: 0;
     width: 100%;
-    background-color: orange;
+    background-color:darkorange;
     z-index: 999;
     
     padding: 20px;
 
+}
+#searchInput {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+#searchInput:focus {
+  border-color: #007bff;
 }
 
 
@@ -57,8 +69,8 @@ button {
 }
 
 .logo img {
-  width: 100%;
-  height: auto;
+  width: 200%;
+  height: 100px;
   display: block;
   padding-top: 20px;
   
@@ -94,7 +106,11 @@ nav > .container {
   width: 100px;
     height:100px;
 }
-
+h1{
+  font-style:italic;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #26bfed;
+}
 
 .mainBody {
  /* display: flex;
@@ -103,6 +119,7 @@ nav > .container {
   width: 70%;
   
 }
+
 
 
 .cart {
@@ -120,7 +137,46 @@ nav > .container {
   
   z-index: 9999;
 }
+.toast-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.toast {
+  background-color:#26bfed;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+.toast.show {
+  display: block;
+  animation: fadeIn 0.5s, fadeOut 0.5s 2.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 .frontImg {
+  
   
   height: 400px;
   width: 100%;
@@ -302,6 +358,24 @@ nav > .container {
 .product button:disabled {
   background: var(--color3);
   filter: brightness(1.75);
+}
+.toggle-btn {
+  display: flex;
+  gap: 10px;
+}
+
+.toggle-btn button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.toggle-btn button.active {
+  background-color: #007bff;
+  color: #fff;
 }
 
 /* cart */

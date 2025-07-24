@@ -54,4 +54,5 @@ function renderProducts(){
         </div>`;
       })
       .join("");
+      
   };

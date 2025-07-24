@@ -1,0 +1,186 @@
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+header{
+  position: fixed;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:darkorange;
+    z-index: 999;
+    
+    padding: 20px;
+
+}
+.header-right img{
+  width: 50px;
+  height: 55px;
+  border-radius: 360px;
+  border:2px #000304 solid;
+}
+nav {  
+  color: var(--color8);  
+  
+  
+}
+.container {
+  max-width: 100%;
+  padding: 0 20px;
+}
+.logo img {
+  width: 200%;
+  height: 100px;
+  display: block;
+  padding-top: 10px;
+  
+}
+
+
+nav > .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+     
+}
+
+.logo {
+  width: 100px;
+    height:100px;
+}
+.cart-btn {
+  margin-right: 30px;
+  padding: 3px 8px;
+  position: relative;
+  background-color: blueviolet;
+  color: #fff;
+}
+
+
+.payment-container {
+  width: 600px;
+  
+  margin: 160px auto 40px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.payment-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.payment-container p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#payment-form {
+  margin-top: 20px;
+  margin-left: 10%;
+}
+
+#payment-form label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#payment-form select {
+  width: 80%;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+#credit-card-details {
+  margin-top: 20px;
+}
+
+#credit-card-details label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#credit-card-details input[type="text"] {
+  width: 80%;
+  height: 20px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+.payment-buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+#pay-button {
+  width:30%;
+  height: 40px;
+  background-color: #6d9ad1;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#go-back-button {
+  width:30%;
+  height: 40px;
+  background-color: #6d9ad1;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#pay-button:hover {
+  background-color: #3e8e41;
+}
+footer {
+  width: 100%;
+  background-color:darkorange; /* add a background color */
+   padding: 30px;
+  text-align: center; /* center the content */
+  position: relative; /* or absolute, depending on your layout */
+  bottom: 0; /* stick to the bottom */
+  left: 0; /* stick to the left */
+    box-sizing: border-box;
+
+}
+.footnote{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-around;
+  align-items: center;
+}
+#footer-lieferando{
+  width: 160px;
+  height: auto;
+  
+
+}
+
+  
+
+#footersocial img{height:auto; 
+  width:50px;}
+
+  
+    
+
+  
+#footersocial img:hover{cursor:pointer;
+  filter:drop-shadow(0px 0px 6px #FFFFFF);
+}

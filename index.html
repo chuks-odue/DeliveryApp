@@ -18,15 +18,13 @@
       <nav>
       <div class="container">
         <div class="logo"><img src="img/food-delivery-high-resolution-logo-transparent.png" alt=""></div>
-
-
+        <div><h1>EVERY BITES TELLS A STORY</h1></div>
         <button class="cart-btn">
-          <i class="bi bi-cart"></i>
-          
-
+          <i class="bi bi-cart" style="font-size: 44px;"></i>
           <small class="cart-qty">0</small>
-        </button>
-       
+        </button>    
+        
+         
       </div>
       
     </nav>
@@ -34,7 +32,7 @@
     <div class="ahu">
      <div class="main">
     
-      <img class="frontImg" src="img/cheese-1887233_640.jpg" alt="dinning-table">
+      <img class="frontImg" src="img/Background.jpg" alt="dinning-table">
        <div class="restaurant">
           <figure><img src="restaurant logo.png" alt="">
           <figcaption> <h6>Address:Obiagu strasse 55, 89789 Enugu</h6></figcaption>
@@ -51,24 +49,28 @@
           
           
       </div>
-     
       <div class="middle">
-          <div class="food-type" id="foodType">
-              <a href="#food1">
-                  <div class="food-selection">Food</div>
-              </a>
-              <a href="#food8">
-                  <div class="food-selection">Burger</div>
-              </a>
-              <a href="#food9">
-                  <div class="food-selection">Pizza</div>
-              </a>
-              
-              <a href="#food3">
-                  <div class="food-selection">Chips</div>
-              </a>
-          </div>
+        <div class="food-type" id="foodType">
+  <a href="index.html?category=Main Dish"> 
+    <div class="food-selection">Drinks</div>
+  </a>
+  <a href="index.html?category=Burger">
+    <div class="food-selection">Burger</div>
+  </a>
+  <a href="index.html?category=Pizza">
+    <div class="food-selection">Pizza</div>
+  </a>
+  <a href="index.html?category=Chips">
+    <div class="food-selection">Chips</div>
+  </a>
+</div>
       </div>
+
+      <div id="toast-container" class="toast-container">
+  <div id="toast" class="toast"></div>
+</div>
+     
+
       
         
   
@@ -88,6 +90,13 @@
         <i class="fa fa-close cart-close"></i>
         <h2>Your Cart</h2>
       </div>
+      <div class="cart-option">
+  <label>Delivery Option:</label>
+  <div class="toggle-btn">
+    <button id="pickup-btn" class="active">Pick-up</button>
+    <button id="delivery-btn">Delivery ($5.00)</button>
+  </div>
+</div>
       <div class="cart-body"></div>
       <div class="cart-footer">
         <div>
